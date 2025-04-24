@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Theater</title>
+  <link rel="stylesheet" href="theatre.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">🎭</div>
+    <div class="title">Theater</div>
+  </header>
+
+  <main>
+    <h1>Discover the Magic of Theater</h1>
+    <p>Dive into the rich world of drama, performance, and stage history.</p>
+  </main>
+
+  <!-- Search Bar -->
+<div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search plays or years..." oninput="filterTheaterItems()" />
+  </div>
+  
+
+  <!-- Theater Item List -->
+  <a href="#" class="theater-item" onclick="showTheaterInfo('Hamlet', '1600', 'A tragedy by William Shakespeare about the Prince of Denmark, his struggle with revenge, madness, and mortality.')">
+    <div class="theater-content">
+      <img src="https://hawkherald.com/wp-content/uploads/2024/04/IMG_9984.jpeg" alt="Hamlet" class="theater-image">
+      <div class="theater-title">Hamlet (1600)</div>
+    </div>
+  </a>
+  
+  <a href="#" class="theater-item" onclick="showTheaterInfo('Macbeth', '1606', 'A tragedy by William Shakespeare about the rise and fall of Macbeth, a Scottish nobleman, and his quest for power that leads to his demise.')">
+    <div class="theater-content">
+      <img src="https://m.media-amazon.com/images/M/MV5BMzNiOWQxZjAtODlkMi00Y2FjLWIzY2UtYTZlNzUwNzM2MzI0XkEyXkFqcGc@._V1_.jpg" alt="Macbeth" class="theater-image">
+      <div class="theater-title">Macbeth (1606)</div>
+    </div>
+  </a>
+  
+  <a href="#" class="theater-item" onclick="showTheaterInfo('Romeo and Juliet', '1597', 'A tragedy by William Shakespeare about two young star-crossed lovers whose deaths ultimately reconcile their warring families.')">
+    <div class="theater-content">
+      <img src="https://thumbnails.simplestreamcdn.com/digitaltheatre/ondemand/38065928.jpg?width=700&lang=en&" alt="Romeo and Juliet" class="theater-image">
+      <div class="theater-title">Romeo and Juliet (1597)</div>
+    </div>
+  </a>
+
+  <a href="#" class="theater-item" onclick="showTheaterInfo('Death of a Salesman', '1949', 'Arthur Miller’s powerful drama about the American Dream and the struggles of a traveling salesman, Willy Loman.')">
+    <div class="theater-content">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsUl-bB49y7uyEdIaN01waPe-gg8_WFJx6lg&s" alt="Death of a Salesman" class="theater-image">
+      <div class="theater-title">Death of a Salesman (1949)</div>
+    </div>
+  </a>
+  
+  <a href="#" class="theater-item" onclick="showTheaterInfo('A Streetcar Named Desire', '1947', 'Tennessee Williams\' dramatic play about desire, mental health, and cultural conflict in the American South.')">
+    <div class="theater-content">
+      <img src="https://i0.wp.com/joshatthemovies.com/wp-content/uploads/2025/03/A-Streetcar-Named-Desire.jpg?fit=800%2C1200&ssl=1" alt="A Streetcar Named Desire" class="theater-image">
+      <div class="theater-title">A Streetcar Named Desire (1947)</div>
+    </div>
+  </a>
+  
+  <a href="#" class="theater-item" onclick="showTheaterInfo('The Crucible', '1953', 'Arthur Miller’s play set during the Salem witch trials, serving as an allegory for McCarthyism in 1950s America.')">
+    <div class="theater-content">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR60iGLenFEvI-qJHX3p135XU3B46UdM3K2_A&s" alt="The Crucible" class="theater-image">
+      <div class="theater-title">The Crucible (1953)</div>
+    </div>
+  </a>
+  
+  <a href="#" class="theater-item" onclick="showTheaterInfo('Waiting for Godot', '1953', 'Samuel Beckett’s absurdist masterpiece where two characters wait endlessly and in vain for the arrival of someone named Godot.')">
+    <div class="theater-content">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9RTNdEwmJAuaBnJAsX-tQ8nbjN9aGBjNhXw&s" alt="Waiting for Godot" class="theater-image">
+      <div class="theater-title">Waiting for Godot (1953)</div>
+    </div>
+  </a>
+  
+  <a href="#" class="theater-item" onclick="showTheaterInfo('Les Misérables', '1980', 'Based on Victor Hugo’s novel, this epic musical explores justice, redemption, and love in revolutionary France.')">
+    <div class="theater-content">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ011okWytnkIvc-P9kjAcvhKExbRA0tSy6cQ&s" alt="Les Misérables" class="theater-image">
+      <div class="theater-title">Les Misérables (1980)</div>
+    </div>
+  </a>
+  
+  <a href="#" class="theater-item" onclick="showTheaterInfo('The Phantom of the Opera', '1986', 'Andrew Lloyd Webber’s romantic musical about a masked phantom living beneath a Paris opera house.')">
+    <div class="theater-content">
+      <img src="https://images.ctfassets.net/6pezt69ih962/spO4dvQ2d27GnxYWBxnBF/63098b18838bc2603d38edbcecbd7b6e/PHA23_Q2_017_TTG_480x720_AW.jpg" alt="The Phantom of the Opera" class="theater-image">
+      <div class="theater-title">The Phantom of the Opera (1986)</div>
+    </div>
+  </a>
+  
+  <a href="#" class="theater-item" onclick="showTheaterInfo('Antigone', '441 BC', 'Sophocles’ tragedy about defiance, state law vs. moral law, and a woman’s resolve in ancient Thebes.')">
+    <div class="theater-content">
+      <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1486701308i/7728.jpg" alt="Antigone" class="theater-image">
+      <div class="theater-title">Antigone (441 BC)</div>
+    </div>
+  </a>
+  
+  <a href="#" class="theater-item" onclick="showTheaterInfo('The Cherry Orchard', '1904', 'Anton Chekhov’s drama about an aristocratic Russian family facing the loss of their estate and way of life.')">
+    <div class="theater-content">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0n4T8i9PF99GAocWma6IRBOw1PQtq3Nj4GA&s" alt="The Cherry Orchard" class="theater-image">
+      <div class="theater-title">The Cherry Orchard (1904)</div>
+    </div>
+  </a>
+  
+  <a href="#" class="theater-item" onclick="showTheaterInfo('Pygmalion', '1913', 'George Bernard Shaw’s witty social commentary about language, class, and transformation, later adapted into My Fair Lady.')">
+    <div class="theater-content">
+      <img src="https://www.lastminutetheatretickets.com/londonwestend/wp-content/uploads/2011/05/Pygmalion-in-The-Garrick-Theatre-in-London-c-Nimax-Theatres-p-GoUK.com-.jpg" alt="Pygmalion" class="theater-image">
+      <div class="theater-title">Pygmalion (1913)</div>
+    </div>
+  </a>
+  
+  <a href="#" class="theater-item" onclick="showTheaterInfo('The Importance of Being Earnest', '1895', 'Oscar Wilde’s comedic play full of satire, mistaken identities, and witty dialogue about Victorian society.')">
+    <div class="theater-content">
+      <img src="https://m.media-amazon.com/images/M/MV5BNGYxZTViMTMtODI3Yi00MDcyLWFhODEtYjdiYmJmY2IzODVlXkEyXkFqcGc@._V1_.jpg" alt="The Importance of Being Earnest" class="theater-image">
+      <div class="theater-title">The Importance of Being Earnest (1895)</div>
+    </div>
+  </a>
+
+  <!-- Add more theater items as needed -->
+
+  <!-- Popup Modal -->
+  <div id="theater-popup" class="popup">
+    <div class="popup-content">
+      <button class="popup-close" onclick="closePopup()">X</button>
+      <h2 id="popup-title"></h2>
+      <p id="popup-description"></p>
+      <p><strong>Year: </strong><span id="popup-year"></span></p>
+      <button class="popup-back" onclick="closePopup()">Back</button>
+    </div>
+  </div>
+
+  <script src="theatre.js"></script>
+</body>
+</html>
+
