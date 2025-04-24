@@ -1,0 +1,94 @@
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.6;
+    background-color: #fffdfa;
+    color: #1DCD9F;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://img.freepik.com/premium-photo/black-white-newspaper-pages-with-dramatic-lighting-look-news-media-current-events_1074775-8383.jpg?semt=ais_hybrid&w=740);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    background-color: #1DCD9F;
+    padding: 10px 20px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .logo {
+    font-size: 28px;
+    margin-right: 10px;
+  }
+  
+  .title {
+    font-weight: bold;
+  }
+  
+  .news-article {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  .headline {
+    font-size: 2.5em;
+    font-weight: bold;
+    border-bottom: 2px solid #1DCD9F;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .subheadline {
+    font-size: 1.2em;
+    color: #1DCD9F;
+    margin-bottom: 20px;
+  }
+  
+  .article-image img,
+  .article-image-right img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 4px;
+  }
+  
+  .article-image-right {
+    float: right;
+    width: 40%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .article-content {
+    text-align: justify;
+    font-size: 18px;
+  }
+  
+  .dropcap {
+    float: left;
+    font-size: 3em;
+    line-height: 1;
+    padding-right: 10px;
+    font-weight: bold;
+    color: #1DCD9F;
+  }
+  
+  .img-caption {
+    font-size: 0.9em;
+    color: #1DCD9F;
+    margin-top: 5px;
+    font-style: italic;
+  }
+  
+  @media (max-width: 768px) {
+    .article-image-right {
+      float: none;
+      width: 100%;
+      margin: 20px 0;
+    }
+  }
+  

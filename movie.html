@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movies</title>
+  <link rel="stylesheet" href="movie.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">🎬</div>
+    <div class="title">Movies</div>
+  </header>
+
+  <main>
+    <h1>Discover the Magic of Cinema</h1>
+    <p>Explore the world of films from different eras and genres.</p>
+
+    <!-- Search Bar -->
+    <input type="text" id="searchBar" placeholder="Search for movies..." oninput="filterMovies()" class="search-bar">
+
+    <!-- Movie Item List -->
+    <div id="movie-list">
+      <a href="#" class="movie-item" onclick="showMovieInfo('The Kid', '1921', 'A silent film that made Chaplin famous. It\'s about a little orphan boy who gets help from a tramp. The movie is both funny and emotional.')">
+        <div class="movie-content">
+          <img src="https://s3.amazonaws.com/criterion-production/films/d79522ba6149f7c670b6f69a58f78d36/FWOWQZvfsMCAgUYwCQ6K5lBQrLR3XH_large.jpg" alt="The Kid" class="movie-image">
+          <div class="movie-title">The Kid (1921)</div>
+        </div>
+      </a>
+
+      <a href="#" class="movie-item" onclick="showMovieInfo('Casablanca', '1942', 'A World War II-era love story set in Casablanca, where a nightclub owner helps his former lover escape from the Nazis. A story of sacrifice and romance.')">
+        <div class="movie-content">
+          <img src="https://www.ziuaconstanta.ro/images/stories/2014/11/26/stiati-ca-casablanca.jpg" alt="The Kid" class="movie-image">
+          <div class="movie-title">Casablanca (1942)</div>
+        </div>
+      </a>
+
+      <a href="#" class="movie-item" onclick="showMovieInfo('Rear Window', '1954', 'A suspenseful thriller by Alfred Hitchcock, where a photographer suspects his neighbor of murder after spying on him through his rear window.')">
+        <div class="movie-content">
+          <img src="https://s3.amazonaws.com/nightjarprod/content/uploads/sites/130/2020/09/21125907/rear-window-poster.jpg" alt="The Kid" class="movie-image">
+          <div class="movie-title">Rear Window (1954)</div>
+        </div>
+      </a>
+
+      <a href="#" class="movie-item" onclick="showMovieInfo('The Godfather', '1972', 'A crime epic that follows the powerful Corleone mafia family, focusing on the life of Michael Corleone as he becomes the new head of the family.')">
+        <div class="movie-content">
+          <img src="https://m.media-amazon.com/images/M/MV5BNGEwYjgwOGQtYjg5ZS00Njc1LTk2ZGEtM2QwZWQ2NjdhZTE5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="The Kid" class="movie-image">
+          <div class="movie-title">The Godfather (1972)</div>
+        </div>
+      </a>
+
+      <a href="#" class="movie-item" onclick="showMovieInfo('Frankenstein', '1931', 'A classic horror film about a scientist who creates a living monster from body parts, which leads to a terrifying rampage.')">
+        <div class="movie-content">
+          <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p5448_p_v8_ab.jpg" alt="The Kid" class="movie-image">
+          <div class="movie-title">Frankenstein (1931)</div>
+        </div>
+      </a>
+
+      <a href="#" class="movie-item" onclick="showMovieInfo('Gone with the Wind', '1939', 'An epic love story set during the American Civil War, following Scarlett O\'Hara\'s struggle to survive and prosper despite the collapse of the South.')">
+        <div class="movie-content">
+          <img src="https://m.media-amazon.com/images/M/MV5BYmYxZTE3YzMtYmE2Yy00NmFlLTkzYTAtYTAzN2IzNDFkN2E0XkEyXkFqcGc@._V1_.jpg" alt="Epic Romance" class="movie-image">
+      <div class="movie-title">Gone with the Wind (1939)</div>
+        </div>
+      </a>
+
+      <a href="#" class="movie-item" onclick="showMovieInfo('Pulp Fiction', '1994', 'A groundbreaking crime film by Quentin Tarantino, weaving together multiple storylines in a non-linear fashion, famous for its sharp dialogue and memorable characters.')">
+        <div class="movie-content">
+          <img src="https://cdn.kinocheck.com/i/j7qxa1uc8s.jpg" alt="Crime and Drama" class="movie-image">
+      <div class="movie-title">Pulp Fiction (1994)</div>
+        </div>
+      </a>
+
+      <a href="#" class="movie-item" onclick="showMovieInfo('Schindler\'s List', '1993', 'A powerful drama about the Holocaust, focusing on the true story of a businessman who saved over a thousand Jews from the Nazis during World War II.')">
+        <div class="movie-content">
+          <img src="https://m.media-amazon.com/images/M/MV5BNjM1ZDQxYWUtMzQyZS00MTE1LWJmZGYtNGUyNTdlYjM3ZmVmXkEyXkFqcGc@._V1_.jpg" alt="War Drama" class="movie-image">
+      <div class="movie-title">Schindler's List (1993)</div>
+        </div>
+      </a>
+
+      <a href="#" class="movie-item" onclick="showMovieInfo('The Shawshank Redemption', '1994', 'A heartwarming and inspiring tale of two prisoners who form a lasting friendship as they endure life behind bars and eventually seek freedom.')">
+        <div class="movie-content">
+          <img src="https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg" alt="Inspirational Drama" class="movie-image">
+      <div class="movie-title">The Shawshank Redemption (1994)</div>
+        </div>
+      </a>
+
+      <a href="#" class="movie-item" onclick="showMovieInfo('The Dark Knight', '2008', 'The second film in Christopher Nolan\'s Batman trilogy, where Batman faces off against the Joker, a criminal mastermind intent on plunging Gotham into chaos.')">
+        <div class="movie-content">
+          <img src="https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_FMjpg_UX1000_.jpg" alt="Superhero Thriller" class="movie-image">
+          <div class="movie-title">The Dark Knight (2008)</div>
+        </div>
+      </a>
+
+      <a href="#" class="movie-item" onclick="showMovieInfo('Inception', '2010', 'A mind-bending thriller where a thief who enters the dreams of others is tasked with planting an idea into the mind of a CEO. Directed by Christopher Nolan.')">
+        <div class="movie-content">
+          <img src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_.jpg" alt="Sci-Fi Thriller" class="movie-image">
+      <div class="movie-title">Inception (2010)</div>
+        </div>
+      </a>
+
+      <a href="#" class="movie-item" onclick="showMovieInfo('Fight Club', '1999', 'A cult classic about an unnamed narrator who forms an underground fight club to cope with his dissatisfaction with life. Themes of consumerism and self-destruction are explored.')">
+        <div class="movie-content">
+          <img src="https://upload.wikimedia.org/wikipedia/en/f/fc/Fight_Club_poster.jpg" alt="Psychological Drama" class="movie-image">
+      <div class="movie-title">Fight Club (1999)</div>
+        </div>
+      </a>
+
+      <a href="#" class="movie-item" onclick="showMovieInfo('The Matrix', '1999', 'A groundbreaking sci-fi film where a hacker discovers that reality is a simulation controlled by machines, and he is the key to freeing humanity.')">
+        <div class="movie-content">
+          <img src="https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg" alt="Sci-Fi Action" class="movie-image">
+      <div class="movie-title">The Matrix (1999)</div>
+        </div>
+      </a>
+
+      <a href="#" class="movie-item" onclick="showMovieInfo('Star Wars: Episode IV - A New Hope', '1977', 'The original space opera that introduced the world to the epic saga of Jedi knights, Sith lords, and the battle between good and evil in a galaxy far, far away.')">
+        <div class="movie-content">
+          <img src="https://upload.wikimedia.org/wikipedia/en/8/87/StarWarsMoviePoster1977.jpg" alt="Space Opera" class="movie-image">
+      <div class="movie-title">Star Wars: Episode IV - A New Hope (1977)</div>
+        </div>
+      </a>
+
+      <a href="#" class="movie-item" onclick="showMovieInfo('The Silence of the Lambs', '1991', 'A psychological horror film about an FBI agent who seeks the help of a brilliant but insane serial killer, Hannibal Lecter, to catch another killer.')">
+        <div class="movie-content">
+          <img src="https://m.media-amazon.com/images/M/MV5BNDdhOGJhYzctYzYwZC00YmI2LWI0MjctYjg4ODdlMDExYjBlXkEyXkFqcGc@._V1_.jpg" alt="Psychological Thriller" class="movie-image">
+      <div class="movie-title">The Silence of the Lambs (1991)</div>
+        </div>
+      </a>
+
+      <a href="#" class="movie-item" onclick="showMovieInfo('Goodfellas', '1990', 'A gangster drama directed by Martin Scorsese, following the rise and fall of a mobster and his experiences within the mafia world over decades.')">
+        <div class="movie-content">
+          <img src="https://m.media-amazon.com/images/M/MV5BN2E5NzI2ZGMtY2VjNi00YTRjLWI1MDUtZGY5OWU1MWJjZjRjXkEyXkFqcGc@._V1_.jpg" alt="Mafia Drama" class="movie-image">
+      <div class="movie-title">Goodfellas (1990)</div>
+        </div>
+      </a>
+
+      <a href="#" class="movie-item" onclick="showMovieInfo('Taxi Driver', '1976', 'A gritty psychological drama about a mentally unstable Vietnam War veteran who becomes a taxi driver in New York City and plans an act of violence.')">
+        <div class="movie-content">
+          <img src="https://m.media-amazon.com/images/M/MV5BZDNhMGYwM2UtMTdlZS00MGQ1LWI2YzAtODY5YWI1MjYyNzRmXkEyXkFqcGc@._V1_.jpg" alt="Psychological Drama" class="movie-image">
+      <div class="movie-title">Taxi Driver (1976)</div>
+        </div>
+      </a>
+
+      <a href="#" class="movie-item" onclick="showMovieInfo('Apocalypse Now', '1979', 'A war film about the Vietnam War, following a U.S. Army captain on a mission to assassinate a rogue colonel. The film explores the horror of war and the madness it brings.')">
+        <div class="movie-content">
+          <img src="https://m.media-amazon.com/images/S/pv-target-images/7107c4dc79147b1f6ede6fab0be77030f411513620cde767fcb1da1948623ca4.jpg" alt="War Drama" class="movie-image">
+      <div class="movie-title">Apocalypse Now (1979)</div>
+        </div>
+      </a>
+
+      <a href="#" class="movie-item" onclick="showMovieInfo('The Wizard of Oz', '1939', 'A colorful fantasy film about a young girl named Dorothy who is swept away to the magical land of Oz and embarks on a journey to return home.')">
+        <div class="movie-content">
+          <img src="https://play-lh.googleusercontent.com/CZG_jjCv-8xUkobwpNVUTMZZUhsKMgMQ-TuqNVyYNBUIVfw59K06KQN49g47pavcUbM" alt="Fantasy Adventure" class="movie-image">
+      <div class="movie-title">The Wizard of Oz (1939)</div>
+        </div>
+      </a>
+
+      <a href="#" class="movie-item" onclick="showMovieInfo('The Shining', '1980', 'A psychological horror film by Stanley Kubrick, where a writer slowly goes mad while isolated in a haunted hotel during the winter with his family.')">
+        <div class="movie-content">
+          <img src="https://m.media-amazon.com/images/I/81f0R7uwewL._AC_UF894,1000_QL80_.jpg" alt="Horror Thriller" class="movie-image">
+      <div class="movie-title">The Shining (1980)</div>
+        </div>
+      </a>
+
+      <!-- Add more movie items as needed -->
+    </div>
+  </main>
+
+  <!-- Popup Modal -->
+  <div id="movie-popup" class="popup">
+    <div class="popup-content">
+      <button class="popup-close" onclick="closePopup()">X</button>
+      <h2 id="popup-title"></h2>
+      <p id="popup-description"></p>
+      <p><strong>Year: </strong><span id="popup-year"></span></p>
+      <button class="popup-back" onclick="closePopup()">Back</button>
+    </div>
+  </div>
+
+  <script src="movie.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,147 @@
+/* Basic styling for the page */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #31363F;
+    color: #EEEEEE;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #222831;
+    color: #76ABAE;
+  }
+  
+  .navbar .logo {
+    font-size: 30px;
+  }
+  
+  .navbar .title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  #searchInput {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #1DCD9F;
+    border-radius: 8px;
+    outline: none;
+    background-color: #444C56;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .history-items {
+    margin: 20px;
+  }
+  
+  .history-item {
+    display: block;
+    width: 100%;
+    margin: 15px 0;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .history-content {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #222831;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .history-content:hover {
+    background-color: #76ABAE;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  .history-image {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 3px solid #fff;
+  }
+  
+  .history-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  /* Popup Styles */
+  .popup {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-content {
+    background-color: #222831; /* Matching movie theme */
+    color: #76ABAE; /* Light teal color for text */
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    width: 80%;
+    text-align: center;
+  }
+  
+  .popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #76ABAE;
+  }
+  
+  h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .popup-back {
+    background-color: #76ABAE;
+    color: #222831;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+  }
+  
+  .popup-back:hover {
+    background-color: #4d9c8b;
+  }
+  

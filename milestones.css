@@ -1,0 +1,87 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Georgia', serif;
+    background-color: #31363F;
+    color: #EEEEEE;
+    line-height: 1.6;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222831;
+    padding: 10px;
+  }
+  
+  .navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #76ABAE;
+  }
+  
+  .navbar .title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #76ABAE;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .article {
+    background-color: #222831;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .article h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .article h3 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  .article p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .article ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .article-image {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222831;
+    color: #76ABAE;
+    margin-top: 30px;
+  }
+  
